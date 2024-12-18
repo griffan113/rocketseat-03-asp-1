@@ -5,9 +5,7 @@ using Rkst03ASP1.Entities;
 
 namespace Rkst03ASP1.Controllers;
 
-[Route("api/[controller]")]
-[ApiController]
-public class UserController : ControllerBase {
+public class UserController : Rkst03ASP1BaseController {
     [HttpGet]
     [ProducesResponseType(typeof(List<User>), StatusCodes.Status200OK)]
     public IActionResult GetAll() {
